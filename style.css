@@ -160,9 +160,12 @@ hr {
     
 }
 @media only screen and (min-width: 768px)  {
+    .move-left {
+        margin-left: 40%;
+    }
     .move-left{
         padding-top: 4em;
-        padding-left: 1em;
+        padding-left: 2em;
         padding-right: 1em;
     }
     .sidebar {
@@ -173,7 +176,7 @@ hr {
         border-top-left-radius: 2.5%;
         border-top-right-radius: 2.5%;
         margin-right: 0;
-        margin-top: 2em;
+        margin-top: 2.1em;
     }
     .main-container {
         margin-top: -1.2em;
@@ -207,5 +210,8 @@ hr {
         padding-left: .8em;
         padding-bottom: .1em;
         font-family: 'Baloo Bhaina 2';
+    }
+    .hide-desktop {
+        display: none;
     }
 }
