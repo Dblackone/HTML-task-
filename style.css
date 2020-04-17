@@ -1,8 +1,8 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap');
 
-body, h1,h2,h3,h4,h5,h6 {font-family: 'Comic Neue';}
+
+body, h1,h2,h3,h4,h5,h6 {font-family: 'Comic Neue', cursive;}
   .row-padding img {margin-bottom: 12px}
   .bgimg {
     background-position: center;
@@ -72,7 +72,6 @@ header {
     border-bottom-right-radius: 2.5%;
     border-top-left-radius: 2.5%;
     border-top-right-radius: 2.5%;
-    font-family: 'Comic Neue';
 }
 .summary-container {
     background-color: purple;
@@ -80,12 +79,10 @@ header {
     border-bottom-right-radius: 2.5%;
     border-top-left-radius: 2.5%;
     border-top-right-radius: 2.5%;
-    font-family: 'Comic Neue';
 }
 .profile-container {
     padding-left: .8em;
     padding-bottom: .1em;
-    font-family: 'Baloo Bhaina 2';
 }
 .contact-padding {
     padding-left: .8em;
@@ -132,7 +129,6 @@ hr {
 }
 .name-text {
     font-size: 2.7rem;
-    font-family: 'Comic Neue';
 }
 .input {
     border: none;
@@ -152,7 +148,15 @@ hr {
     padding: .8em;
     border: none;
 }
-
+.about {
+    color: yellow;
+    padding-bottom: 1em;
+}
+.summary {
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+}
 @media (max-width:767px) {
     .sidebar
         {display:none;
@@ -196,7 +200,6 @@ hr {
         border-bottom-right-radius: 2.5%;
         border-top-left-radius: 2.5%;
         border-top-right-radius: 2.5%;
-        font-family: 'Comic Neue';
     }
     .summary-container {
         background-color: purple;
@@ -204,14 +207,15 @@ hr {
         border-bottom-right-radius: 1.3%;
         border-top-left-radius: 1.3%;
         border-top-right-radius: 1.3%;
-        font-family: 'Comic Neue';
     }
     .profile-container {
         padding-left: .8em;
         padding-bottom: .1em;
-        font-family: 'Baloo Bhaina 2';
     }
     .hide-desktop {
         display: none;
+    }
+    .-padding {
+        padding-top: 1.5em!important;
     }
 }
