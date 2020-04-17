@@ -1,6 +1,19 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap');
+
+body, h1,h2,h3,h4,h5,h6 {font-family: 'Comic Neue', cursive;}
+  .row-padding img {margin-bottom: 12px}
+  .bgimg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('https://res.cloudinary.com/start-ng/image/upload/v1585950452/iPhone_360_olmuhx.jpg');
+    min-height: 100%;
+  }
 body {
     margin: 0;
+    background-color: wheat;
 }
 .top {
     position:fixed;
@@ -19,7 +32,7 @@ header {
     border:none;
     display:block;
     outline:0;
-    background-color:yellow;
+    background-color:rgb(207, 207, 13);
 }
 .bar-items {
     width:100%;display:block;
@@ -53,15 +66,47 @@ header {
     border-top-left-radius: 2.5%;
     border-top-right-radius: 2.5%;
 }
+.contact-container {
+    background-color: yellow;
+    border-bottom-left-radius: 2.5%;
+    border-bottom-right-radius: 2.5%;
+    border-top-left-radius: 2.5%;
+    border-top-right-radius: 2.5%;
+    font-family: 'Comic Neue', cursive;
+}
+.summary-container {
+    background-color: purple;
+    border-bottom-left-radius: 2.5%;
+    border-bottom-right-radius: 2.5%;
+    border-top-left-radius: 2.5%;
+    border-top-right-radius: 2.5%;
+    font-family: 'Comic Neue', cursive;
+}
 .profile-container {
     padding-left: .8em;
+    padding-bottom: .1em;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+.contact-padding {
+    padding-left: .8em;
+    padding-top: .8em;
     padding-bottom: .5em;
+}
+.footer-container {
+    background-color: purple;
+    text-align: center;
+    margin-top: 1em;
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
 hr {
     border: .5em;
     border-top:1px solid #eee;
     margin:20px 0;
     padding-right: 5em;
+}
+.text-yellow {
+    color: yellow;
 }
 .sidebar {
     height:100%;
@@ -71,9 +116,9 @@ hr {
     z-index:1;
     overflow:auto;
 }
-.show{display:block!important}
-.animte-top {position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
-
+.show {
+    display:block!important;
+}
 .text-purple {
     color: purple;
 }
@@ -94,6 +139,7 @@ hr {
 }
 .name-text {
     font-size: 2.7rem;
+    font-family: 'Comic Neue', cursive;
 }
 .img {
     width: 75%;
@@ -103,8 +149,26 @@ hr {
     border-top-right-radius: 2.5%;
 }
 .input {
-    
+    border: none;
+    background-color: gainsboro;
+    padding-right: 5em;
+    padding-top: 1.5em;
+    padding-bottom: .5em;
+    padding-left: .3em;
+    text-align: left;
+    border-bottom-left-radius: 2.5%;
+    border-bottom-right-radius: 2.5%;
+    border-top-left-radius: 2.5%;
+    border-top-right-radius: 2.5%;
 }
+.action-button {
+    background-color: purple;
+    padding: .8em;
+    border: none;
+}
+button,input{font:inherit;margin:0}
+button,input{overflow:visible}button{text-transform:none}
+button,[type=button],[type=reset],[type=submit]{-webkit-appearance:button}
 @media (max-width:992px) {
     .sidebar
         {display:none;
