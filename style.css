@@ -1,30 +1,35 @@
 
 body {
-    margin: .5em;
+    margin: 0;
 }
 .top {
     position:fixed;
-    width:100%;
-    z-index:1;
+}
+header {
+    display: flex;
+    justify-content: stretch  !important;
+}
+.header-text {
+    font-size: .5em;
+    color: purple;
 }
 .bar {
-    padding:8px 16px;
-    float:left;
-    width:auto;
+    padding:4px 8px;
+    width:100%;
     border:none;
     display:block;
     outline:0;
+    background-color:yellow;
 }
 .bar-items {
     width:100%;display:block;
     padding:8px 16px;
-    text-align:left;
     border:none;
     white-space:normal;
     float:none;outline:0;
 }
 .button {
-    white-space:normal;
+    white-space: normal;
     border:none;
     display:inline-block;
     padding:8px 16px;
@@ -32,13 +37,31 @@ body {
     overflow:hidden;
     text-decoration:none;
     color:inherit;
-    background-color:inherit;
+    background-color: inherit;
     text-align:center;
     cursor:pointer;
-    white-space:nowrap;
 }
-.hide {
-    display: none;
+.main-container {
+    margin-top: 3em;
+    margin-right: .8em;
+    margin-left: .8em;
+}
+.container {
+    background-color: yellow;
+    border-bottom-left-radius: 2.5%;
+    border-bottom-right-radius: 2.5%;
+    border-top-left-radius: 2.5%;
+    border-top-right-radius: 2.5%;
+}
+.profile-container {
+    padding-left: .8em;
+    padding-bottom: .5em;
+}
+hr {
+    border: .5em;
+    border-top:1px solid #eee;
+    margin:20px 0;
+    padding-right: 5em;
 }
 .sidebar {
     height:100%;
@@ -48,29 +71,11 @@ body {
     z-index:1;
     overflow:auto;
 }
-.hide {
-    display: none;
-}
-.hide-small {
-    display:none!important;
-}
 .show{display:block!important}
 .animte-top {position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
-.hide-medium {
-    display: none;
-}
-.hide-large {
-    display: none;
-}
-.black,.hover-black:hover,.hover-black{color:#fff!important;background-color:#000!important}
+
 .text-purple {
     color: purple;
-}
-.profile-container {
-    padding:0.01em 16px;
-}
-.profile {
-    border-radius:4px;
 }
 .center {
     text-align: center;
@@ -84,7 +89,8 @@ body {
 .name {
     font-weight: bold;
     text-align: center;
-    margin-top: 1.5em;
+    padding-top: 1em;
+    margin-top: 1.2em;
 }
 .name-text {
     font-size: 2.7rem;
@@ -95,6 +101,9 @@ body {
     border-bottom-right-radius: 2.5%;
     border-top-left-radius: 2.5%;
     border-top-right-radius: 2.5%;
+}
+.input {
+    
 }
 @media (max-width:992px) {
     .sidebar
