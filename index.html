@@ -10,7 +10,7 @@
 </head>
 <style>
   body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-  .w3-row-padding img {margin-bottom: 12px}
+  .row-padding img {margin-bottom: 12px}
   .bgimg {
     background-position: center;
     background-repeat: no-repeat;
@@ -23,57 +23,90 @@
 
     <!--NavBar-->
   <div>
-    <nav>
-      <a href="#" class="hide-dextop">
-          <img src="images/ham.svg" alt="toggle menu" class="menu" id="menu">
-      </a>
-
-      <ul class="show-dextop hide-mobile" id="nav">
-        <li id="exit" class="exit-btn hide-dextop"><img src="images/exit.svg" alt="exit menu"></li>  
-        <li><a href="#">HOME</a></li>  
-        <li><a href="#">PROFILE</a></li>  
-        <li><a href="#">ABOUT</a></li>  
-        <li><a href="#">CONTACT</a></li>    
-      </ul>
-    </nav>
+    <header>
+      <div class="bar top header-text" id="myNavbar">
+        <a href="#home" class="bar-item button ">HOME</a>
+        <a href="#about" class="bar-item button"><i class="fa fa-user"></i> ABOUT</a>
+        <a href="#portfolio" class="bar-item button"><i class="fa fa-th"></i> PORTFOLIO</a>
+        <a href="#contact" class="bar-item button"><i class="fa fa-envelope"></i> CONTACT</a>
+      </div>
+    </header>
   </div>
-<!-- Sidebar with image -->
+<!-- Sidebar with image
 <nav class="sidebar" style="width:40%">
   <div class="bgimg"></div>
-</nav>
+</nav> -->
   
 <!-- Page Content -->
-    <div class="main-container" id="">
-        
-        <div class="card profile w3-white">
+    <div class="main-container" id="home">
+        <div class="card profile container">
             <div class="profile-container text-purple">
-                <h4 class="center hide-dextop">Akarakiri Vollmann</h4>
+                <h2 class="center hide-dextop name name-text">AKARAKIRI VOLLMANN</h2>
                 <p class="center"><img src="https://res.cloudinary.com/start-ng/image/upload/v1585951180/v_cwwm2l.jpg" class="circle" style="height:106px;width:106px" alt="Avatar"></p>
                 <hr>
-                <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> Frontend Devloper</p>
-                <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> rasaq way, elatu, osapa london, lekki, lagos</p>
+                <p><i class="fa fa-pencil fa-fw"></i> Frontend Devloper</p>
+                <p><i class="fa fa-home fa-fw"></i> rasaq way, elatu, osapa london, lekki, lagos</p>
                 <p><i class="fas fa-atlas"></i> Ondo state, Nigeria</p>
-                <p><i class="fa fa-birthday-cake fa-fw w3-margin-right w3-text-theme"></i> September 25, 1996</p>
+                <p><i class="fa fa-birthday-cake fa-fw"></i> September 25, 1996</p>
                 <p><i class="fas fa-user-circle"></i> Dblackone</p>
                 <p><i class="fas fa-at"></i> vollmannakarakiri0@gmail.com</p>
             </div>
         </div><br>
+
+
+          <!--summary section-->
+        <div class="card container" id="about">
+          <div>
+            <h2>SUMMARY</h2>
+            <P class="center">
+              
+            </P>
+          </div>
+        </div>
+
+
+            <!--contact form-->
+        <div class="card container" id="contact">
+          <div>
+            <h2>CONTACT ME</h2>
+            <div class="">
+              <p><i class="fa fa-map-marker"></i> F.U.T.A.</p>
+              <p><i class="fa fa-phone "></i> Phone: +234 816 367 5439</p>
+              <p><i class="fa fa-envelope"> </i> Email: vollmannakarakiri0@gmail.com</p>
+            </div>
+            <p>Lets get in touch. Send me a message:</p>
+            <form action="/action_page.php" target="_blank">
+              <p><input class="input" type="text" placeholder="Name" required name="Name"></p>
+              <p><input class="input" type="text" placeholder="Email" required name="Email"></p>
+              <p><input class="input" type="text" placeholder="Message" required name="Message"></p>
+              <p>
+                <button class="" type="submit">
+                  <i class=""></i> SEND MESSAGE
+                </button>
+              </p>
+            </form>
+          </div>
+        </div> 
+    </div>
+    <!--end of content-->
+
+    <div class="footer-container">
+      <div class="footer">
+        <p>Powered by <a href="">start.ng</a></p>
+      </div>
     </div>
 
     <script>
-        var menu = document.getElementById('menu');
-        var nav = document.getElementById('nav');
-        var exit = document.getElementById('exit');
+      // Open and close sidebar
+      function openNav() {
+        document.getElementById("mySidebar").style.width = "60%";
+        document.getElementById("mySidebar").style.display = "block";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidebar").style.display = "none";
+      }
+    </script>
 
-        menu.addEventListener('click', function(e) {
-            nav.classList.toggle('hide-mobile');
-            e.preventdefault();
-        });
-
-        exit.addEventListener('click', function(e) {
-            nav.classList.add('hide-mobile');
-            e.preventdefault();
-        });
-      </script>
 </body>
 </html>
