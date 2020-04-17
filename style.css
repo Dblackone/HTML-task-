@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap');
 
-body, h1,h2,h3,h4,h5,h6 {font-family: 'Comic Neue', cursive;}
+body, h1,h2,h3,h4,h5,h6 {font-family: 'Comic Neue';}
   .row-padding img {margin-bottom: 12px}
   .bgimg {
     background-position: center;
@@ -72,7 +72,7 @@ header {
     border-bottom-right-radius: 2.5%;
     border-top-left-radius: 2.5%;
     border-top-right-radius: 2.5%;
-    font-family: 'Comic Neue', cursive;
+    font-family: 'Comic Neue';
 }
 .summary-container {
     background-color: purple;
@@ -80,12 +80,12 @@ header {
     border-bottom-right-radius: 2.5%;
     border-top-left-radius: 2.5%;
     border-top-right-radius: 2.5%;
-    font-family: 'Comic Neue', cursive;
+    font-family: 'Comic Neue';
 }
 .profile-container {
     padding-left: .8em;
     padding-bottom: .1em;
-    font-family: 'Baloo Bhaina 2', cursive;
+    font-family: 'Baloo Bhaina 2';
 }
 .contact-padding {
     padding-left: .8em;
@@ -132,7 +132,7 @@ hr {
 }
 .name-text {
     font-size: 2.7rem;
-    font-family: 'Comic Neue', cursive;
+    font-family: 'Comic Neue';
 }
 .input {
     border: none;
